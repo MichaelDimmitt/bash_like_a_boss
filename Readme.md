@@ -5,3 +5,6 @@
 
 `d=${PWD##*/};echo ; echo $d;echo ;  git status $d;`
 
+## for each branch 
+
+for BRANCH in `git branch --list| cut -c 3-`; do echo $BRANCH; done 
